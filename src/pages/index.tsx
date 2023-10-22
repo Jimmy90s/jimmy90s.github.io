@@ -40,7 +40,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col lg:flex-row items-center gap-4 justify-around">
             <Link href="mailto:jimmy90s@outlook.com">
-              <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto hover:bg-gray-700">
+              <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto hover:bg-instagram">
                 Contact me
               </button>
             </Link>
