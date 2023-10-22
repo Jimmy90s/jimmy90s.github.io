@@ -31,7 +31,7 @@ export default function Home() {
       </Head>
       <button
         onClick={() => (theme == "dark" ? setTheme("light") : setTheme("dark"))}
-        className="bg-gray-800 dark:bg-gray-200 hover:bg-gray-600 dark:hover:bg-gray-300 transition-all duration-100 text-white dark:text-gray-800 px-2 py-2 text-md md:text-sm  rounded-full ease-in-out flex justify-center items-center absolute top-4 right-4"
+        className="bg-gray-300 dark:bg-gray-200 hover:bg-gray-600 dark:hover:bg-gray-300 transition-all duration-100 text-white dark:text-gray-800 px-2 py-2 text-md md:text-sm  rounded-full ease-in-out flex justify-center items-center absolute top-4 right-4"
       >
         <Arrow />
       </button>
@@ -58,16 +58,16 @@ export default function Home() {
             Program Developer - Amazon
           </h1>
 
-          <p className="text-base sm:text-xs md:text-md lg:text-lg xl:text-xl dark:text-black">
+          <p className="text-base sm:text-xs md:text-md lg:text-lg xl:text-xl text-gray-700">
             I specialize in developing web applications using Ruby on Rails,
-            Bootstrap, React, Nextjs, TailwindCSS and AWS with GraphQL. I have
-            extensive experience in developing scalable web applications that
-            are both user-friendly and visually appealing. At Amazon, I’ve had
-            the opportunity to work on a number of exciting projects, including
-            developing a Ruby on Rails website that leverages the power of AWS
-            to deliver fast, reliable performance.If you’re interested in
-            learning more about my work or would like to connect, please don’t
-            hesitate to reach out!
+            Bootstrap, React, Nextjs, TailwindCSS and AWS with GraphQL, S3
+            buckets, DynamoDB and IAM permissions. I have extensive experience
+            in developing scalable web applications that are both user-friendly
+            and visually appealing. At Amazon, I’ve had the opportunity to work
+            on a number of exciting projects, including developing a Ruby on
+            Rails website that leverages the power of AWS to deliver fast,
+            reliable performance.If you’re interested in learning more about my
+            work or would like to connect, please don’t hesitate to reach out!
           </p>
           <div className="flex flex-col lg:flex-row items-center gap-4 justify-around">
             <Link href="mailto:jimmy90s@outlook.com">
@@ -104,6 +104,14 @@ export default function Home() {
           description="E-commerce website with AWS GraphQL and Nextjs"
           imageUrl="/project-1.png"
           bgColor="#685cdd"
+        />
+        <ProjectPreview
+          name="Social Media Clone"
+          websiteLink="https://main.d1f44gpqbavq1z.amplifyapp.com"
+          gitHubLink="https://github.com/Jimmy90s/social-clone"
+          description="Social media clone with AWS GraphQL and NextJs "
+          imageUrl="/project-3.png"
+          bgColor="#4e4e56"
         />
         <ProjectPreview
           name="Portfolio Website"
