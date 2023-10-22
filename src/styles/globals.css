@@ -4,4 +4,5 @@
 
 body {
   @apply max-w-[90%] w-[1080px] mx-auto;
+  /* background: lightgrey; */
 }
