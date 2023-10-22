@@ -23,13 +23,13 @@ export default function Home() {
 
       <section className="grid grid-cols-1  gap-4 mb-4">
         <div className="bg-zinc-200 rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover  text-ellipsis overflow-hidden ...">
-          <h1 className="text-4xl m-0 font-semibold">
-            Program Developer at Amazon
+          <h1 className="text-4xl m-0 font-semibold text-center">
+            Program Developer - Amazon
           </h1>
 
           <p className="text-base sm:text-xs md:text-md lg:text-lg xl:text-xl ...">
             I specialize in developing web applications using Ruby on Rails,
-            Bootstrap, React, Nextjs, TailwindCSS and AWS with GrapgQL. I have
+            Bootstrap, React, Nextjs, TailwindCSS and AWS with GraphQL. I have
             extensive experience in developing scalable web applications that
             are both user-friendly and visually appealing. At Amazon, I’ve had
             the opportunity to work on a number of exciting projects, including
@@ -67,10 +67,10 @@ export default function Home() {
 
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
         <ProjectPreview
-          name="Amplify store"
+          name="Amplify Store"
           websiteLink="https://main.d5kf8k93kaord.amplifyapp.com/"
           gitHubLink="https://github.com/Jimmy90s/amplify"
-          description="AWS Nextjs E-commerce website"
+          description="E-commerce website with AWS GraphQL and Nextjs"
           imageUrl="/project-1.png"
           bgColor="#685cdd"
           dark
@@ -79,7 +79,7 @@ export default function Home() {
           name="Portfolio Website"
           websiteLink="https://jimmy90s.github.io/"
           gitHubLink="https://github.com/Jimmy90s/jimmy90s.github.io"
-          description="This site to display my most recent projects"
+          description="This site, used to display my most recent projects"
           imageUrl="/project-2.png"
           bgColor="#4e4e56"
           dark
