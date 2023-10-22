@@ -29,19 +29,21 @@ export default function Home() {
 
           <p className="text-base sm:text-xs md:text-md lg:text-lg xl:text-xl ...">
             I specialize in developing web applications using Ruby on Rails,
-            Bootstrap, React, Nextjs, TailwindCSS and AWS. I have extensive
-            experience in developing scalable web applications that are both
-            user-friendly and visually appealing. At Amazon, I’ve had the
-            opportunity to work on a number of exciting projects, including
+            Bootstrap, React, Nextjs, TailwindCSS and AWS with GrapgQL. I have
+            extensive experience in developing scalable web applications that
+            are both user-friendly and visually appealing. At Amazon, I’ve had
+            the opportunity to work on a number of exciting projects, including
             developing a Ruby on Rails website that leverages the power of AWS
             to deliver fast, reliable performance.If you’re interested in
             learning more about my work or would like to connect, please don’t
             hesitate to reach out!
           </p>
           <div className="flex flex-col lg:flex-row items-center gap-4 justify-around">
-            <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto hover:bg-gray-700">
-              Contact me
-            </button>
+            <Link href="mailto:jimmy90s@outlook.com">
+              <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto hover:bg-gray-700">
+                Contact me
+              </button>
+            </Link>
 
             <div className="flex items-center gap-4">
               <Link href="https://github.com/Jimmy90s" passHref={true}>
