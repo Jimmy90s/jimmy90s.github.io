@@ -22,7 +22,7 @@ const Navbar = () => {
             href="https://docs.google.com/document/d/1qBF6Mz6ML_tyvgWOHzLG0s8jrz-Y_cIvfKkKjhMhdfQ/edit?usp=sharing"
             passHref={true}
           >
-            <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto hover:bg-instagram">
+            <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto hover:bg-instagram dark:bg-white dark:text-black">
               Resume
             </button>
           </Link>

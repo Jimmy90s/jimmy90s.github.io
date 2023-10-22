@@ -3,13 +3,24 @@ import Navbar from "../../components/Navbar";
 import ProjectPreview from "../../components/ProjectPreview";
 import Dribbble from "../../public/dribbble.svg";
 import Instagram from "../../public/instagram.svg";
-import Twitter from "../../public/twitter.svg";
+import Arrow from "../../public/arrow.svg";
 import Linkedin from "../../public/linkedin.svg";
 import Github from "../../public/github.svg";
 import SocialButton from "../../components/SocialButton";
 import Link from "next/link";
+import Button from "../../components/Button";
+import { useTheme } from "next-themes";
+
+// import { Roboto } from "next/font/google";
+
+// const roboto = Roboto({
+//   weight: "400",
+//   subsets: ["latin"],
+// });
 
 export default function Home() {
+  const { systemTheme, theme, setTheme } = useTheme();
+  const currentTheme = theme === "light" ? systemTheme : theme;
   return (
     <>
       <Head>
@@ -18,16 +29,36 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <button
+        onClick={() => (theme == "dark" ? setTheme("light") : setTheme("dark"))}
+        className="bg-gray-800 dark:bg-gray-200 hover:bg-gray-600 dark:hover:bg-gray-300 transition-all duration-100 text-white dark:text-gray-800 px-2 py-2 text-md md:text-sm  rounded-full ease-in-out flex justify-center items-center absolute top-4 right-4"
+      >
+        <Arrow />
+      </button>
+
+      {/* <h2
+        className={`text-4xl sm:text-6xl md:text-9xl text-center text-gray-800`}
+      >
+        LIGHT MODE
+      </h2>
+      <h2
+        className={`text-4xl sm:text-6xl md:text-9xl text-center text-white `}
+      >
+        DARK MODE
+      </h2> */}
+      {/* <button className="bg-gray-800 dark:bg-gray-50 hover:bg-gray-600 dark:hover:bg-gray-300 transition-all duration-100 text-white dark:text-gray-800 px-8 py-2 text-2xl md:text-4xl rounded-lg absolute bottom-32">
+        Toggle Mode
+      </button> */}
 
       <Navbar />
 
       <section className="grid grid-cols-1  gap-4 mb-4">
         <div className="bg-zinc-200 rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover  text-ellipsis overflow-hidden ...">
-          <h1 className="text-4xl m-0 font-semibold text-center">
+          <h1 className="text-4xl m-0 font-semibold text-center dark:text-black">
             Program Developer - Amazon
           </h1>
 
-          <p className="text-base sm:text-xs md:text-md lg:text-lg xl:text-xl ...">
+          <p className="text-base sm:text-xs md:text-md lg:text-lg xl:text-xl dark:text-black">
             I specialize in developing web applications using Ruby on Rails,
             Bootstrap, React, Nextjs, TailwindCSS and AWS with GraphQL. I have
             extensive experience in developing scalable web applications that
@@ -73,7 +104,6 @@ export default function Home() {
           description="E-commerce website with AWS GraphQL and Nextjs"
           imageUrl="/project-1.png"
           bgColor="#685cdd"
-          dark
         />
         <ProjectPreview
           name="Portfolio Website"
@@ -82,7 +112,6 @@ export default function Home() {
           description="This site, used to display my most recent projects"
           imageUrl="/project-2.png"
           bgColor="#4e4e56"
-          dark
         />
         {/* <ProjectPreview
           name="Admin Onboarding"

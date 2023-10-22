@@ -6,3 +6,8 @@ body {
   @apply max-w-[90%] w-[1080px] mx-auto;
   /* background: lightgrey; */
 }
+@layer base {
+  body {
+    @apply dark:bg-gray-800 bg-white;
+  }
+}

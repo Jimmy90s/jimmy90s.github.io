@@ -35,7 +35,7 @@ const ProjectPreview: React.FC<Props> = ({
     <div>
       <motion.div
         className={`h-[30rem] rounded-3xl overflow-hidden ${
-          dark ? "dark" : ""
+          dark ? "dark" : "light"
         }`}
         style={{ background: `${bgColor}` }}
         initial="initial"
@@ -53,7 +53,7 @@ const ProjectPreview: React.FC<Props> = ({
                   <h2 className="font-medium text-lg dark:text-white">
                     {name}
                   </h2>
-                  <p className="text-sm text-zinc-500 dark:text-zinc-300">
+                  <p className="text-sm  text-black dark:text-white">
                     {description}
                   </p>
                 </div>
