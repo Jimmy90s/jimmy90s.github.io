@@ -50,12 +50,8 @@ const ProjectPreview: React.FC<Props> = ({
             >
               <div className="flex justify-between">
                 <div>
-                  <h2 className="font-medium text-lg dark:text-white">
-                    {name}
-                  </h2>
-                  <p className="text-sm  text-black dark:text-white">
-                    {description}
-                  </p>
+                  <h2 className="font-medium text-lg text-white">{name}</h2>
+                  <p className="text-sm  text-gray-400">{description}</p>
                 </div>
                 <div className="h-12 w-12 bg-white rounded-full flex justify-center items-center cursor-pointer">
                   <Link href={gitHubLink!} passHref={true}>
