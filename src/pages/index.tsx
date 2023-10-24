@@ -122,7 +122,7 @@ export default function Home() {
         />
         <ProjectPreview
           name="Portfolio Website"
-          websiteLink="https://jimmy90s.github.io/"
+          websiteLink="#"
           gitHubLink="https://github.com/Jimmy90s/jimmy90s.github.io"
           description="This site, used to display my most recent projects"
           imageUrl="/project-2.png"

@@ -43,7 +43,12 @@ const ProjectPreview: React.FC<Props> = ({
         variants={PreviewAnimation}
       >
         {isClient && (
-          <Link href={websiteLink!}>
+          <Link
+            href={websiteLink!}
+            passHref={true}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               className={`h-full w-full px-10 py-6 duration-[500ms] hover:scale-105 bg-cover bg-no-repeat bg-center transition-all ease-in-out`}
               style={{ backgroundImage: `url('${imageUrl}')` }}
