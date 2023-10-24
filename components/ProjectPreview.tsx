@@ -54,7 +54,12 @@ const ProjectPreview: React.FC<Props> = ({
                   <p className="text-sm  text-gray-400">{description}</p>
                 </div>
                 <div className="h-12 w-12 bg-white rounded-full flex justify-center items-center cursor-pointer">
-                  <Link href={gitHubLink!} passHref={true}>
+                  <Link
+                    href={gitHubLink!}
+                    passHref={true}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <SocialButton bgColor="dribbble">
                       <Github className="w-5 h-5" />
                     </SocialButton>

@@ -77,7 +77,12 @@ export default function Home() {
             </Link>
 
             <div className="flex items-center gap-4">
-              <Link href="https://github.com/Jimmy90s" passHref={true}>
+              <Link
+                href="https://github.com/Jimmy90s"
+                passHref={true}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <SocialButton bgColor="dribbble">
                   <Github className="w-5 h-5" />
                 </SocialButton>
@@ -85,6 +90,8 @@ export default function Home() {
               <Link
                 href="https://www.linkedin.com/in/jameslaurieca/"
                 passHref={true}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <SocialButton bgColor="linkedin">
                   <Linkedin className="w-5 h-5" />
@@ -121,17 +128,20 @@ export default function Home() {
           imageUrl="/project-2.png"
           bgColor="#4e4e56"
         />
+        <ProjectPreview
+          name="AWS Data Lake"
+          websiteLink="https://public.tableau.com/app/profile/james3436/viz/AWSDataLakeCrimeData/Dashboard1"
+          gitHubLink="https://github.com/Jimmy90s/emr-serverless-data-lake"
+          description="AWS EMR Data Lake and Tableau"
+          imageUrl="/project-1.png"
+          bgColor="#685cdd"
+        />
         {/* <ProjectPreview
           name="Admin Onboarding"
           description="Increase user engagement"
           imageUrl="/project-3.png"
         />
-        <ProjectPreview
-          name="Project Dashboard"
-          description="Project management app"
-          bgColor="#4e4e56"
-          dark
-        />
+
         <ProjectPreview
           name="Newsy App"
           description="News aggregator app"
