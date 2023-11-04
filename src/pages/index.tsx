@@ -52,7 +52,7 @@ export default function Home() {
 
       <Navbar />
 
-      <section className="grid grid-cols-1  gap-4 mb-4">
+      <section className="grid grid-col md:grid-cols-2 lg:grid-cols-2   gap-4 mb-4">
         <div className="bg-zinc-200 rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover  text-ellipsis overflow-hidden ...">
           <h1 className="text-4xl m-0 font-semibold text-center dark:text-black">
             Program Developer - Amazon
@@ -100,7 +100,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <div className="h-[30rem] rounded-3xl p-8 bg-[url('/profile.jpg')] bg-cover bg-center" /> */}
+        <div className=" invisible xl:visible lg:visible md:visible rounded-3xl p-8 bg-[url('/portfolio_pic.png')] bg-cover bg-center " />
       </section>
 
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
