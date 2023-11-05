@@ -105,20 +105,12 @@ export default function Home() {
 
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
         <ProjectPreview
-          name="Amplify Store"
-          websiteLink="https://main.d5kf8k93kaord.amplifyapp.com/"
-          gitHubLink="https://github.com/Jimmy90s/amplify"
-          description="E-commerce website with AWS GraphQL and Nextjs"
+          name="cdk-amplify"
+          websiteLink="https://main.d38lal5xgzws8s.amplifyapp.com"
+          gitHubLink="https://github.com/Jimmy90s/cdk-amplify-frontend"
+          description="AWS CDK Nextjs Deployed App"
           imageUrl="/project-1.png"
           bgColor="#685cdd"
-        />
-        <ProjectPreview
-          name="Social Media Clone"
-          websiteLink="https://main.d1f44gpqbavq1z.amplifyapp.com"
-          gitHubLink="https://github.com/Jimmy90s/social-clone"
-          description="Social media clone with AWS GraphQL and NextJs "
-          imageUrl="/project-3.png"
-          bgColor="#4e4e56"
         />
         <ProjectPreview
           name="Portfolio Website"
